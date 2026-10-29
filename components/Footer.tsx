@@ -13,7 +13,9 @@ const Footer = () => {
   return (
     <footer className="mt-auto bg-white border-t border-slate-200 px-6 py-7 text-slate-600">
       <div className="mx-auto max-w-5xl space-y-1 text-sm">
-        <p className="font-semibold text-slate-900">New Generation High School</p>
+        <p className="font-semibold text-slate-900">
+          New Generation High School
+        </p>
         <p>123 Learning Avenue, Calgary, AB</p>
         <p>Phone: (403) 555-0100</p>
         <p>Email: info@newgeneration.example</p>

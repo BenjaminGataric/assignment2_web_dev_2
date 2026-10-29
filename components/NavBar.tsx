@@ -13,11 +13,19 @@ const NavBar = () => {
   return (
     <header className="bg-white border-b border-slate-200">
       <div className="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <h1 className="text-lg font-bold text-slate-900">New Generation High School</h1>
+        <h1 className="text-lg font-bold text-slate-900">
+          New Generation High School
+        </h1>
         <nav className="flex flex-wrap gap-4 text-sm font-medium text-blue-700">
-          <a href="#overview" className="hover:text-blue-900">Overview</a>
-          <a href="#students" className="hover:text-blue-900">Students</a>
-          <a href="#add-student" className="hover:text-blue-900">Add a student</a>
+          <a href="#overview" className="hover:text-blue-900">
+            Overview
+          </a>
+          <a href="#students" className="hover:text-blue-900">
+            Students
+          </a>
+          <a href="#add-student" className="hover:text-blue-900">
+            Add a student
+          </a>
         </nav>
       </div>
     </header>
