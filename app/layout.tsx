@@ -11,6 +11,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
       <body className="flex min-h-screen flex-col bg-slate-50 text-slate-900">
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
