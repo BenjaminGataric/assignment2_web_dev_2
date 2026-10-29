@@ -1,5 +1,12 @@
+// import StudentCard from "./StudentCard";
+import StudentList from "./StudentList";
+
 const StudentPortal = () => {
-  return <h1>test</h1>;
+  return (
+    <div className="bg-white rounded-2xl shadow-md p-6">
+      <StudentList />
+    </div>
+  );
 };
 
 export default StudentPortal;
