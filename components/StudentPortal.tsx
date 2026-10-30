@@ -49,11 +49,11 @@ const StudentPortal = () => {
   };
   return (
     <div>
-      <section>
+      <section id="overview">
         <h2 className="text-xl font-bold">Overview</h2>
         <StatsPanel students={students} />
       </section>
-      <section>
+      <section id="students">
         <h1 className="font-bold text-xl">Students</h1>
         <SearchBox query={searchText} onQueryChange={setSearchText} />
         <StudentList students={filteredStudents} onRemove={handleRemove} />
@@ -64,7 +64,7 @@ const StudentPortal = () => {
           Clear All Students
         </button>
       </section>
-      <section>
+      <section id="add-student">
         <h1 className="font-bold text-xl">Add Student</h1>
         <AddStudentForm onAdd={handleAdd} />
       </section>
