@@ -6,7 +6,7 @@ export const studentList = [
     grade: 10,
     average: 21,
   },
-  { id: 1, firstName: "Harry", lastName: "Osborn", grade: 12, average: 80 },
+  { id: 8, firstName: "Harry", lastName: "Osborn", grade: 12, average: 80 },
   { id: 2, firstName: "Gwen", lastName: "Stacy", grade: 12, average: 66 },
   { id: 3, firstName: "Eddie", lastName: "Brock", grade: 9, average: 80 },
   { id: 4, firstName: "Norman", lastName: "Osborn", grade: 11, average: 70 },
