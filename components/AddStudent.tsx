@@ -67,12 +67,14 @@ const AddStudentForm = ({onAdd}: AddStudentProps) => {
             <input
                 type="number"
                 value={grade}
+                placeholder="Enter Grade"
                 onChange={handleGradeChange}
                 className="w-20 rounded-lg border border-slate-300 px-4 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"
             />
             <input
                 type="number"
                 value={average}
+                placeholder="Enter Average"
                 onChange={handleAverageChange}
                 className="w-20 rounded-lg border border-slate-300 px-4 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"
             />
