@@ -49,8 +49,8 @@ const AddStudentForm = ({onAdd}: AddStudentProps) => {
     };
     
     return (
-        <div className="flex gap-3">
-            <div>
+        <div className="flex flex-col gap-3">
+            <div className="flex gap-3">
                 <input
                     type="text"
                     value={firstName}
@@ -66,24 +66,22 @@ const AddStudentForm = ({onAdd}: AddStudentProps) => {
                     className="flex-1 rounded-lg border border-slate-300 px-4 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"
                 />
             </div>
-            <div>
+            <div className="flex gap-3">
                 <input
                     type="number"
                     value={grade}
                     placeholder="Enter Grade"
                     onChange={handleGradeChange}
-                    className="w-20 rounded-lg border border-slate-300 px-4 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"
+                    className="flex-1 rounded-lg border border-slate-300 px-4 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"
                 />
-            </div>
-            <div>
                 <input
                     type="number"
                     value={average}
                     placeholder="Enter Average"
                     onChange={handleAverageChange}
-                    className="w-20 rounded-lg border border-slate-300 px-4 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"
-                />
-            </div>
+                    className="flex-1 rounded-lg border border-slate-300 px-4 py-2 text-slate-900 focus:border-blue-500 focus:outline-none"
+                    />
+                </div>            
             <div>
                 <button
                     onClick={handleClick}
