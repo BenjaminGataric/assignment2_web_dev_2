@@ -1,37 +1,28 @@
-"use client";
-
-import { useState } from "react";
 import StudentCard from "./StudentCard";
-import { studentList } from "@/data/students";
 
-const StudentList = () => {
-  const [students, setStudents] = useState(studentList);
-
-  const handleRemove = (id: number) => {
-    setStudents((currentStudents) =>
-      currentStudents.filter((student) => student.id !== id),
-    );
-  };
-
-  return (
-    <ul className="mt-6 flex flex-col gap-4">
-      {students.length === 0 ? (
-        <li className="text-center text-slate-500">No students found.</li>
-      ) : (
-        students.map((student) => (
-          <StudentCard
-            key={student.id}
-            id={student.id}
-            firstName={student.firstName}
-            lastName={student.lastName}
-            grade={student.grade}
-            average={student.average}
-            onRemove={handleRemove}
-          />
-        ))
-      )}
-    </ul>
-  );
+type Student = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  grade: number;
+  average: number;
 };
+
+type StudentListProps = {
+  students: Student[];
+  onRemove: (id: number) => void;
+};
+
+const StudentList = ({ students, onRemove }: StudentListProps) => (
+  <ul className="mt-6 flex flex-col gap-4">
+    {students.length === 0 ? (
+      <li className="text-center text-slate-500">No students found.</li>
+    ) : (
+      students.map((student) => (
+        <StudentCard key={student.id} {...student} onRemove={onRemove} />
+      ))
+    )}
+  </ul>
+);
 
 export default StudentList;
