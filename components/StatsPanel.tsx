@@ -1,3 +1,12 @@
+/**
+ * File: components/StatsPanel.tsx
+ * Author: Devon Huynh
+ * Date: October 29, 2026
+ * Stats panel shows some of the stats of the student card, where each number is pulled from the information of the student card.
+ * The 3 stats that the panel will show are how many students are listed on the page, how many students are on the honourRoll if their grade is 80 or above, and how many students are in Grrade 12.
+ */
+
+// Stats panel
 interface StudentStatsRow {
     average: number;
     grade: number;
