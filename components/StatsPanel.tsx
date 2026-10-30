@@ -1,7 +1,10 @@
-import Student from "./StudentCard";
+interface StudentStatsRow {
+    average: number;
+    grade: number;
+}
 
 interface StatsPanelProps {
-    students: Student[];
+    students: StudentStatsRow[];
 }
 
 const StatsPanel = ({students}: StatsPanelProps) => {
